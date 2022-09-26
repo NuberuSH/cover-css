@@ -1,0 +1,47 @@
+:root {
+  --square-size: 600px;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.square {
+  width: var(--square-size);
+  height: var(--square-size);
+  background-image: "../../public/herbiehancock-vinylcover.jpg";
+}
+
+.circle {
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.vinyl {
+  width: var(--square-size);
+  height: var(--square-size);
+  background-color: black;
+  transform: translate(-150px);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.small {
+  background-color: red;
+  width: calc(var(--square-size)/3);
+  height: calc(var(--square-size)/3);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.center {
+  background-color: white;
+  width: calc(var(--square-size)/10);
+  height: calc(var(--square-size)/10);
+}
